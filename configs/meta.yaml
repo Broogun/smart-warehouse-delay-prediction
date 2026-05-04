@@ -1,0 +1,17 @@
+model:
+  objective: regression_l1
+  learning_rate: 0.008199772003968979
+  num_leaves: 15
+  min_child_samples: 28
+  feature_fraction: 0.8556
+  bagging_fraction: 0.6144
+  bagging_freq: 1
+  reg_alpha: 0.001092
+  reg_lambda: 0.14552
+  n_jobs: -1
+  seed: 42
+  verbosity: -1
+train:
+  n_splits: 5
+  num_boost_round: 2000
+  early_stopping_rounds: 80

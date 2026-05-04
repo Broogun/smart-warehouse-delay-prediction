@@ -1,0 +1,49 @@
+model:
+  objective: regression_l1
+  metric: mae
+  learning_rate: 0.006308452160659237
+  num_leaves: 889
+  max_depth: -1
+  min_child_samples: 36
+  feature_fraction: 0.7353
+  bagging_fraction: 0.6312
+  bagging_freq: 1
+  reg_alpha: 0.000846
+  reg_lambda: 0.002951
+  n_jobs: -1
+  seed: 42
+  verbosity: -1
+train:
+  n_splits: 15
+  num_boost_round: 5000
+  early_stopping_rounds: 150
+  log_eval_period: 500
+lag:
+  cols:
+  - order_inflow_15m
+  - robot_utilization
+  - congestion_score
+  - pack_utilization
+  - charge_queue_length
+  - battery_mean
+  - blocked_path_15m
+  - fault_count_15m
+  - task_reassign_15m
+  - delay_risk_index
+  - order_per_robot
+  - pack_load
+  - congestion_blocking
+  - system_health
+  - kpi_miss_ratio
+  - aisle_traffic_score
+  - loading_dock_util
+  lags:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  rolling_windows:
+  - 3
+  - 5
+  - 7

@@ -1,0 +1,29 @@
+# 대회 데이터 (재배포 불가)
+data/raw/
+data/processed/
+data/submissions/
+
+# 모델 파일 (용량 큼)
+models/
+
+# CatBoost 학습 로그
+catboost_info/
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# 주피터 체크포인트
+.ipynb_checkpoints/
+
+# 환경
+.env
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/

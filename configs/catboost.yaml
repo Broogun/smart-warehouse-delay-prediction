@@ -1,0 +1,17 @@
+model:
+  loss_function: MAE
+  eval_metric: MAE
+  learning_rate: 0.022887322404115694
+  depth: 10
+  l2_leaf_reg: 0.296332
+  random_strength: 1.8524
+  bagging_temperature: 0.0494
+  border_count: 254
+  min_data_in_leaf: 50
+  random_seed: 42
+  thread_count: -1
+  verbose: 0
+train:
+  n_splits: 15
+  iterations: 2500
+  early_stopping_rounds: 100
