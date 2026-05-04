@@ -84,8 +84,7 @@ OOF 잔차 분석을 통해 발견한 모델 약점:
 ## 실행 순서
 
 ```bash
-python run_train.py        # LightGBM 학습
-python run_catboost.py     # CatBoost 학습
-python run_stacking.py     # 메타 모델 학습
-python run_predict.py      # 예측 및 제출 파일 생성
+python run_train.py        # LightGBM 학습 → OOF 예측값 생성
+python run_catboost.py     # CatBoost 학습 → OOF 예측값 생성
+python run_stacking.py     # 메타 모델 학습 + 최종 예측 및 제출 파일 생성
 ```
