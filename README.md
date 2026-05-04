@@ -65,21 +65,20 @@ OOF 잔차 분석을 통해 발견한 모델 약점:
 │   ├── lgbm.yaml
 │   ├── catboost.yaml
 │   └── meta.yaml
-├── src/                # 핵심 모듈
-│   ├── config.py       # 경로 및 상수 정의
-│   ├── features.py     # 피처 엔지니어링
-│   ├── train.py        # LightGBM 학습
-│   ├── train_catboost.py
-│   └── predict.py      # 예측
+├── src/                  # 핵심 모듈
+│   ├── config.py         # 경로 및 상수 정의
+│   ├── features.py       # 피처 엔지니어링
+│   ├── train.py          # LightGBM 학습
+│   ├── train_catboost.py # catboost 학습
+│   └── predict.py        # 예측
 ├── notebooks/
 │   ├── 00_problem_definition.ipynb  # 문제 정의 및 컬럼 정의
 │   └── 01_eda.ipynb                 # EDA 및 피처 엔지니어링 분석
-├── run_train.py        # LightGBM 학습 실행
-├── run_catboost.py     # CatBoost 학습 실행
-├── run_stacking.py     # 스태킹 메타 모델 학습
-├── run_predict.py      # 예측 및 제출 파일 생성
-├── run_error_analysis.py  # OOF 잔차 분석
-└── run_optuna.py       # 하이퍼파라미터 튜닝
+├── run_train.py                     # LightGBM 학습 실행
+├── run_catboost.py                  # CatBoost 학습 실행
+├── run_stacking.py                  # 스태킹 메타 모델 학습 및 제출 파일 생성
+├── run_error_analysis.py            # OOF 잔차 분석
+└── run_optuna.py                    # 하이퍼파라미터 튜닝
 ```
 
 ## 실행 순서
