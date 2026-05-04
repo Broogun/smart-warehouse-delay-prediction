@@ -1,6 +1,6 @@
 # 스마트 창고 출고 지연 예측 AI
 
-DACON [스마트 창고 출고 지연 예측 AI 경진대회](https://dacon.io) 풀이입니다.
+DACON [스마트 창고 출고 지연 예측 AI 경진대회](https://dacon.io/competitions/official/236696/overview/description) 풀이입니다.
 
 - **기간**: 2026.04.01 ~ 2026.05.04
 - **참가자**: 1,006명
